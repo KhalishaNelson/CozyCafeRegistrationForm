@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./Images/coffee-pot-favicon.png">
+    <title>Cozy Cafe's Home Brewing Workshop - Registration Form</title>
+</head>
+<body>
+    <!-- Logo obtained from freepik.com and edited; favicon obtained from icons-8.com   -->
+
+    <div class="container entire-form bg-light p-3 rounded-3 shadow m-3 mx-auto">
+        <header class="text-center">
+            <div id="logo">
+                <img src="./Images/Cozy-Cafe-Logo-Transparent-Backround.png" alt="Cozy Cafe's Logo" width="200px" height="150px">
+            </div>
+            <div>
+                <h1>Home Brewing Workshop <br> Registration Form</h1>
+                <p>Are you interested in learning how to brew great coffee at home?</p>
+                <p class="second-header-line">Fill in the details below to register!</p>
+            </div>
+        </header>
+        
+        <div class="container form-details">
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <div class="row">
+                          <div class="col">
+                            <label for="fname">First name</label>
+                            <input id="fname" type="text" class="form-control" placeholder="Giuseppe">
+                          </div>
+                          <div class="col">
+                            <label for="lname">Last name</label>
+                            <input id="lname" type="text" class="form-control" placeholder="Fiorini">
+                          </div>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="user-email" class="pt-3">Email</label>
+                            <input id="user-email" type="email" class="form-control" placeholder="name@email.com">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="date-selection">Select a date</label>
+                            <select id="date-selection" class="form-control">
+                                <option selected>Jan 7, 2023 @ 1pm</option>
+                                <option>Feb 4, 2023 @ 11am</option>
+                                <option>Mar 4, 2023 @ 12:30pm</option>
+                              </select>
+                        </div>
+    
+                        <p>Is this your first workshop with us?</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="radio-option" id="radio-yes" value="Yes">
+                            <label class="form-check-label" for="radio-yes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="radio-option" id="radio-no" value="No">
+                            <label class="form-check-label" for="radio-no">No</label>
+                        </div>
+    
+                        <p class="p-label mt-3 ">What are you most excited to learn?</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="brew-eq-checked" id="brew-eq">
+                            <label class="form-check-label" for="brew-eq">
+                              Key home brewing equipment
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Brewing techniques
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Fundamentals e.g. bean quality, measurements and ratios, etc.
+                            </label>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="extra-details">Please share any additional details with us!</label>
+                            <textarea class="form-control" id="extra-details" rows="5" placeholder="I'd like to come to every workshop because I know your instructors are awesome... "></textarea>
+                        </div>
+    
+                        <button type="button" class="btn" id="submit">Register</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
